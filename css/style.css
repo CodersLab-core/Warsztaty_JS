@@ -1,0 +1,303 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  color: #ea6c56;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  color: #ea6c56;
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;  
+}
+
+.brand-container {
+  padding: 0;
+}
+
+.navbar-brand:hover {
+  color: #ea6c56;
+}
+
+.nav-list {
+  color: #ea6c56;
+  font-size: 1.5rem;
+  text-transform: uppercase;  
+  font-weight: 600;
+}
+
+.nav-list a {
+  color: #424343;  
+}
+
+.nav-list a:hover {
+  color: #ea6c56;  
+}
+
+.dropdown {
+  display: none;
+  background-color: #fff;
+  border-radius: 0 .0 .5rem .5rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  margin: auto;
+  padding: 1rem 4rem 1rem 2rem;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown li a {
+  text-decoration: none;
+}
+
+.dropdown li {
+  margin-bottom: 1rem;
+}
+
+.jumbotron {
+  background-image: url('../images/main-background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 12rem;  
+}
+
+.main-slogan {
+  color: #fff;
+  text-shadow: .2rem .2rem .2rem #424343;
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.tasks-btn {
+  background-color: #fff;
+  padding: 1.5rem 3rem;
+  color: #0e3655;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 3rem;
+  border: none;
+  box-shadow: .2rem .2rem .2rem #7f7f7f;
+}
+
+.tasks-btn:hover,
+.tasks-btn:visited,
+.tasks-btn:active {
+  background-color: #fff;
+  color: #0e3655;  
+}
+
+.main-points {
+  text-align: center;
+}
+
+.main-points section {
+  padding: 3rem;
+}
+
+.main-points h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ea6c56;
+  margin: 4rem 0;
+}
+
+.main-points p {
+  font-size: 1.5rem;
+  color: #424343;
+  padding: 1rem 3rem;
+}
+
+.circle {
+	border-radius: 50%;
+  padding: 4rem;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 .2rem .5rem #7f7f7f;
+}
+
+.heart {
+  background-color: #fdc00f;
+}
+
+.education {
+  background-color: #44ca85;
+}
+
+.star {
+  background-color: #4bafd2;
+}
+
+.main-points button {
+  background-color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #424343;
+}
+
+.main-points button:hover {
+  color: #ea6c56;
+}
+
+.main-points button .glyphicon {
+  padding-left: .5rem;
+}
+
+.read-less {
+  display: none;
+}
+
+.plan {
+  background-image: url('../images/plan-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.plan-description {
+  height: 70rem;
+  margin-top: 4rem;
+}
+
+.plan-description h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.plan-description p {
+  font-size: 1.5rem;
+  color: #c8cdd1;
+  margin-top: 4rem;
+}
+
+.list-container {
+  background-color: #fff;
+  color: #0e3655;
+  margin-top: 3rem;
+  padding: 3rem;
+  border-radius: .5rem;
+}
+
+.list-container h5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  font-weight: 600;
+}
+
+.list li {
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  background-color: #F58122;
+  border-radius: .5rem;
+}
+
+.add-task-btn {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ea6c56;
+}
+
+.add-task-btn:hover, 
+.add-task-btn:active {
+  color: #fff;
+}
+
+.orgs h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #0e3655;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.orgs img {
+  width: 100%;
+  padding: 2rem;
+}
+
+.orgs-container h5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.org h5 a {
+  color: #ea6c56;
+  text-decoration: none;
+}
+
+.org h5 a:hover {
+  color: #F58122;
+}
+
+.orgs-container p {
+  color: #424343;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.slider {
+  list-style: none;
+}
+
+.dot {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #ffcdbc;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ea6c56;
+}
+
+.dot:hover {
+  background-color: #ea6c56;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #44ca85;
+  height: 10rem;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #424343;
+  margin-top: 3rem;
+}
