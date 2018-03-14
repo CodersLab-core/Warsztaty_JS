@@ -32,7 +32,7 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
 ```javascript
     var newTask = document.createElement('li');
 ```
-7. Stworzyliśmy nowy element listy, a teraz chcemy przypisać mu treść. Wartość inputu możemy pobrać korzystając z właśności `value`. Zrób `console.log(input.value)`, żeby zobaczyć, czy faktycznie tak to działa. Potem przypisz `value` jako `innerHTML` Twojego nowego elementu listy. Zrób `console.log`, który sprawdza, jaki `innerHTML` ma Twój nowy element.
+7. Stworzyliśmy nowy element listy, a teraz chcemy przypisać mu treść. Wartość inputu możemy pobrać korzystając z własności `value`. Zrób `console.log(input.value)`, żeby zobaczyć, czy faktycznie tak to działa. Potem przypisz `value` jako `innerHTML` Twojego nowego elementu listy. Zrób `console.log`, który sprawdza, jaki `innerHTML` ma Twój nowy element.
 8. Żeby zobaczyć element na stronie, nie wystarczy go tylko stworzyć przez `createElement`, musimy go jeszcze odpowiednio umiejscowić w strukturze DOM. Zrobimy to przez odwołanie do istniejących już elementów. Dzięki temu skrypt będzie wiedział, w którym miejscu dodać nasz element. Wykorzystamy teraz właściwość `appendChild`. To znaczy, będziemy dodawać kolejne dzieci do listy zadań. Dodaj następujący kod wewnątrz funkcji:
 ```javascript
     tasksList.appendChild(newTask);

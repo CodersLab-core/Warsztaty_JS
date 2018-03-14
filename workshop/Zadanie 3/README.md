@@ -12,7 +12,7 @@ Nasze menu ma teraz niewidoczną dolną krawędź. Kiedy zjeżdzamy niżej na st
 
 # Instrukcja
 
-1. Przypisz do zmiennej element, któremu chcemy dodać dolną krawędź. Jeśli nie masz pewności, który to element, spróbuj zmodyfikować właśność `border` w pliku CSS dla tych elementów, które wydają Ci sie prawdopodobne. Gdy dodasz własność `border-bottom` razem z wartością np. `1px solid red`, powinna pokazać się dolna krawędź danego elementu. Po przypisaniu zmiennej wyświetl ją w konsoli, aby sprawdźić, czy wszystko zadziałało prawidłowo. Jeśli nie pamiętasz, jak przypisać zmienną, sprawdź w punkcie pierwszym Zadania 1.
+1. Przypisz do zmiennej element, któremu chcemy dodać dolną krawędź. Jeśli nie masz pewności, który to element, spróbuj zmodyfikować własność `border` w pliku CSS dla tych elementów, które wydają Ci sie prawdopodobne. Gdy dodasz własność `border-bottom` razem z wartością np. `1px solid red`, powinna pokazać się dolna krawędź danego elementu. Po przypisaniu zmiennej wyświetl ją w konsoli, aby sprawdźić, czy wszystko zadziałało prawidłowo. Jeśli nie pamiętasz, jak przypisać zmienną, sprawdź w punkcie pierwszym Zadania 1.
 2. W JS możemy dodawać różne `listenery` do elementów strony. Nas teraz będzie interesował `event` o nazwie `scroll`. Chcemy przypisać go do całego okna, ponieważ będziemy dodawać style do krawędzi przy scrollowaniu całej strony. Dodaj więcej `eventListener` o nazwie `scroll` do okna, czyli `window`. Zrób `console.log` wewnątrz funkcji i sprawdź, czy pojawia się w konsoli, gdy scrollujesz stronę.
 ```javascript
     window.addEventListener('scroll', function() {
