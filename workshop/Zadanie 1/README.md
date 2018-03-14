@@ -34,14 +34,14 @@ Gotowe! Możemy przejść dalej.
 
 ## Dropdown menu
 
-1. Spójrz na kod HTML i znajdź w nim element, w którym znajduje się dodatkowe menu oraz element listy, na który trzeba najechać myszką, by ta dodatkowa sekcja się pokazała. Następnie zapisz oba elementy do zmiennych (użyj do tego `document.querySelector('nazwa-selektora')`). Pamiętaj, że używamy tutaj selektorów CSS, więc nazwę klasy musimy poprzedzić kropką (np. `.menu`), a nazwę id kratką (np. `#element`). Sprawdź, czy odpowiednio zapisałaś zmienne przez wyświetlenie ich w konsoli.
+1. Spójrz na kod HTML i znajdź w nim element, w którym znajduje się dodatkowe menu oraz element listy, na który trzeba najechać myszką, by ta dodatkowa sekcja się pokazała. Następnie zapisz oba elementy do zmiennych (użyj do tego `document.querySelector('nazwa-selektora')`). Pamiętaj, że używamy tutaj selektorów CSS, więc nazwę klasy musimy poprzedzić kropką (np. `.menu`), a nazwę id kratką (np. `#element`). Sprawdź, czy zmienne zostały odpowiednio zapisane przez wyświetlenie ich w konsoli.
 
-Pamiętaj: nazywaj zmienne tak, byś wiedziała, jakie elementy się za nimi kryją.
+Pamiętaj: nazywaj zmienne tak, aby wiedzieć, jakie elementy się za nimi kryją.
 
 2. Teraz zaczynamy z logiką. Chcemy, by po najechaniu myszą na element listy pojawiało się dodatkowe menu. Do tego elementu więc dodamy `event listener`. Będzie to oznaczało tyle, że nasz skrypt będzie teraz nasłuchiwał, czy dany `event` nastąpił. Jeśli tak, zrobi to, co wskażemy mu w kodzie. Dołącz do elementu listy `event listener`, który będzie nasłuchiwał na `mouseover`, czyli najechanie myszką na dany element. 
 Zwróć uwagę, że właśnie `event listener` dodaliśmy do całego naszego dokumentu na samym początku kodu. Teraz musimy zadziałać analogicznie.
 
-3. Po dołączeniu `listenera` w funkcji, która jest do niego dołączona (to tzw. `callback`), dodaj `console.log` z jakimś tekstem. Teraz po najechaniu myszką na dany element listy powinnaś zobaczyć tekst z `console.log` w konsoli.
+3. Po dołączeniu `listenera` w funkcji, która jest do niego dołączona (to tzw. `callback`), dodaj `console.log` z jakimś tekstem. Teraz po najechaniu myszką na dany element listy powinien wyświetlić się tekst z `console.log` w konsoli.
 
 4. W JS możemy wpływać na wygląd elementów przez odwołanie się do `style`. Przykładowo `menu.style` to lista wszystkich stylów elementu przypisanego do zmiennej `menu`. Na początku kodu spróbuj zrobić `console.log`, który pokaże Ci style dla zmiennej z dodatkowym menu. Możesz zobaczyć teraz wszystkie własności CSS danego elementu. Ważna uwaga: `style` widzi tylko te style, które zostały przypisane do elementu w skrypcie. Oznacza to, że teraz dostaniesz pustą listę wyświetlając style dla dodatkowego menu.
 
@@ -53,11 +53,11 @@ element.style.display = 'block';
 ```
 Tak samo możesz wpływać na inne wartości CSS. Dodaj odpowiedni kod do funkcji i sprawdź, czy działa.
 
-7. To jeszcze nie wszystko - wprawdzie menu pojawia się po najechaniu myszką na element listy, ale nie znika, gdy myszka już na nim nie jest. A przecież chcemy, by menu pojawiało się i znikało dynamicznie. Dodaj do elementu listy kolejny `event listener`, czyli `mouseout`. On będzie nasłuchiwał, kiedy myszka przestanie być na danym elemencie. Wtedy musimy zmienić `display` menu z powrotem na `none`. Zrób to sama wykonując kroki analogiczne do tych z punktów od 3 do 6.
+7. To jeszcze nie wszystko - wprawdzie menu pojawia się po najechaniu myszką na element listy, ale nie znika, gdy myszka już na nim nie jest. A przecież chcemy, by menu pojawiało się i znikało dynamicznie. Dodaj do elementu listy kolejny `event listener`, czyli `mouseout`. On będzie nasłuchiwał, kiedy myszka przestanie być na danym elemencie. Wtedy musimy zmienić `display` menu z powrotem na `none`. Zrób to samodzielnie wykonując kroki analogiczne do tych z punktów od 3 do 6.
 
-8. Na sam koniec zwróć uwagę, czy dodatkowe menu jest dobrze ostylowane. Czy ładnie wygląda? Może coś byś zmieniła? Nie ma problemu - wprowadź poprawki w pliku CSS.
+8. Na sam koniec zwróć uwagę, czy dodatkowe menu jest dobrze ostylowane. Czy ładnie wygląda? A może coś chcesz zmienić? Nie ma problemu - wprowadź poprawki w pliku CSS.
 
-9. Skomituj swoje zmiany. Najlepiej dodaj też komentarz w pliku JS z informacją o numerze zadania, które właśnie zrobiłaś. Dzięki temu będzie Ci się łatwiej odnaleźć w kodzie.
+9. Skomituj swoje zmiany. Najlepiej dodaj też komentarz w pliku JS z informacją o numerze zadania, które właśnie zostało zrobione. Dzięki temu będzie Ci się łatwiej odnaleźć w kodzie.
 
 10. Jeśli chcesz zobaczyć rozwiązanie zadania, wpisz w konsoli następującą komendę (KONIECZNIE PAMIĘTAJ O COMMICIE NAJPIERW, INACZEJ STRACISZ SWOJE ZMIANY)
 ```

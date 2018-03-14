@@ -12,25 +12,25 @@ Naszym celem jest sprawienie, by po kliknięciu w przycisk `Więcej` rozwijał s
 
 # Instrukcja
 
-1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Zmienną nazwij np. `buttons`. Wyświetl zmienną w konsoli - powinnaś zobaczyć tablicę z trzema przyciskami. Kod powinien wyglądać mniej więcej w ten sposób:
+1. Poszukaj w kodzie HTML przycisków `Więcej`. Nad każdym z nich widzisz teraz dwa paragrafy. Jeden z nich ma klasę `more`. Ukryj wszystkie paragrafy o klasie `more` przez zmianę `display` na `none` w pliku CSS. Nastepnie w pliku JS zapisz wszystkie przyciski `Więcej` do zmiennej używając `document.querySelectorAll('nazwa-selektora'`). Zmienną nazwij np. `buttons`. Wyświetl zmienną w konsoli - powinna pojawić się tablica z trzema przyciskami. Kod powinien wyglądać mniej więcej w ten sposób:
 ```javascript
     var buttons = document.querySelectorAll('.read-more');
     console.log(buttons);
 ```
 2. Nad każdym przyciskiem znajduje się paragraf o klasie `more` (mimo że teraz jest niewidoczny). Przycisk oraz paragraf mają tego samego rodzica, którym jest nadrzędny dla nich `section`. Są więc rodzeństwem. W JS możemy to wykorzystać. Po kliknięciu w przycisk ma pojawiać się jego poprzedni brat (albo siostra ;)). Żeby sprawdzić, czy faktycznie tak to zadziała, wypisz w konsoli rodzeństwo pierwszego elementu tablicy z przyciskami w ten sposób:
 ```javascript
-    console.log(buttons[0].previousElementSibling); // Powinnaś zobaczyć w konsoli paragraf o klasie `more`
+    console.log(buttons[0].previousElementSibling); // Powinien wyświetlić się w konsoli paragraf o klasie `more`
 ```
 3. Do pierwszego elementu tablicy z przyciskami podłącz `event listener` nasłuchujący na `click`. Dodaj wewnątrz funkcji `console.log`, żeby sprawdzić, czy działa prawidłowo (czyli na kliknięcie). Zrób to w ten sposób:
 ```javascript
     buttons[0].addEventListener('click', function() {
-      console.log('działa'); // To powinnaś zobaczyć w konsoli po kliknięciu w pierwszy przycisk
+      console.log('działa'); // To powinno pojawić się w konsoli po kliknięciu w pierwszy przycisk
     });
 ```
 4. Teraz chcemy, by pojawił się odpowiedni paragraf. Wykorzystamy do tego specjalną zmienną `this`. `this` w uproszczeniu odwołuje się do elementu, na którym została wywołana funkcja. Dzięki niej możemy odnieść się do stanu obiektu bez konieczności podawania jego nazwy. Dla nas `this` to będzie więc przycisk, do którego podłączyliśmy `listener`. Sprawdź to wpisując w kodzie wewnątrz funkcji `console.log(this)`.
 ```javascript
     buttons[0].addEventListener('click', function() {
-      console.log(this); // Powinnaś zobaczyć przycisk w konsoli
+      console.log(this); // Powinien pojawić się przycisk w konsoli
     });
 ```
 5. Dzięki użyciu `this` możemy teraz stworzyć zmienną np. o nazwie `textArea`, która będzie reprezentowała paragraf nad pierwszym przyciskiem. Do zmiennej przypisz `this.previousElementSibling` i sprawdź przez `console.log` czy przypisał się odpowiedni element. 
@@ -82,8 +82,8 @@ Następnie analogicznie zmień zawartość HTML przycisku tak, by zawierała nap
 
     });
 ```
-09. Teraz wszystko powinno dobrze działać dla pierwszego przycisku. Chcemy jednak, by dla dwóch pozostałych przycisków też pokazywały się odpowiednie paragrafy. Możemy skopiować kod i podłączyć funkcję trzy raz do różnych przycisków, ale byłoby to bezsensowne powtarzanie kodu. Dlatego użyjemy pętli `for` do podłączenia funkcji do wszystkich przycisków jednocześnie. Dzięki odwołaniu się do `this` wewnątrz funkcji, zostanie wybrany odpowiedni paragraf dla danego przycisku.
-10. Najpierw przypiszmy całą funkcję, która była wywoływana przez `click` do funkcji, która nie będzie anonimowa. Wcześniej nasza funckja nie miała nazwy, po prostu od razu wypisywaliśmy jej ciało. Oba sposoby przypisania funkcji są poprawne. Wygodniej nam będzie po prostu operować funkcją osobno, a podłączać ją dopiero w pętli. Żeby to zrozumieć, spójrz na poniższe przykłady. 
+09. Teraz wszystko powinno dobrze działać dla pierwszego przycisku. Chcemy jednak, by dla dwóch pozostałych przycisków też pokazywały się odpowiednie paragrafy. Możemy skopiować kod i podłączyć funkcję trzy razy do różnych przycisków, ale byłoby to bezsensowne powtarzanie kodu. Dlatego użyjemy pętli `for` do podłączenia funkcji do wszystkich przycisków jednocześnie. Dzięki odwołaniu się do `this` wewnątrz funkcji, zostanie wybrany odpowiedni paragraf dla danego przycisku.
+10. Najpierw przypiszmy całą funkcję, która była wywoływana przez `click` do funkcji, która nie będzie anonimowa. Wcześniej nasza funkcja nie miała nazwy, po prostu od razu wypisywaliśmy jej ciało. Oba sposoby przypisania funkcji są poprawne. Wygodniej nam będzie po prostu operować funkcją osobno, a podłączać ją dopiero w pętli. Żeby to zrozumieć, spójrz na poniższe przykłady. 
 Ten kod:
 ```javascript
     function showHide() {
@@ -97,7 +97,7 @@ Robi dokładnie to samo, co ten kod:
       // tutaj jest funkcja, wykona się po kliknięciu
     });
 ```
-W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma zrobić program. W drugim przypadku od razu przekazujemy to, co ma zrobić program do funkcji anonimowej.
+W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma zrobić program. W drugim przypadku od razu przekazujemy to, co ma zrobić program do funkcji anonimowej. 
 11. Przypisz kod dodany na kliknięcie do funkcji, która nazywa się np. `showHide`. 
 ```javascript
     function showHide() {
