@@ -97,7 +97,7 @@ Robi dokładnie to samo, co ten kod:
       // tutaj jest funkcja, wykona się po kliknięciu
     });
 ```
-W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma zrobić program. W drugim przypadku od razu przekazujemy to, co ma zrobić program do funkcji anonimowej. 
+W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma zrobić program. W drugim przypadku od razu przekazujemy to, co ma zrobić program do funkcji anonimowej.  
 11. Przypisz kod dodany na kliknięcie do funkcji, która nazywa się np. `showHide`. 
 
 ```javascript
