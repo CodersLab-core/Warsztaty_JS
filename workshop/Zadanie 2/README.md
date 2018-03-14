@@ -59,7 +59,7 @@ Następnie analogicznie zmień zawartość HTML przycisku tak, by zawierała nap
       this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
     });
 ```
-8. Chcemy teraz, aby dodatkowy paragraf schował się po kliknięciu w przycisk, który ma napis `Mniej`. Pamiętajmy, że to cały czas ten sam przycisk. Użyjemy prostego warunku `if`, który pozwoli nam sprawdzić, jaki jest `display` zmiennej `textArea`. Kiedy będzie równy `none`, zmienimy go na `block` i odwrotnie. Jest tu jednak jeden mały haczyk - JS widzi tylko te style, które zostały przypisane do elementu przez skrypt. Przed pierwszym kliknięciem w przycisk, żaden styl jeszcze nie będzie przypisany. Dlatego będzie trzeba ustawić warunek, który ma zadziałać zarówno, jak `display` ustawiony jest na `none`. Oraz wtedy, kiedy nie jest jeszcze ustawiony. Kod będzie wyglądał tak:
+8. Chcemy teraz, aby dodatkowy paragraf schował się po kliknięciu w przycisk, który ma napis `Mniej`. Pamiętajmy, że to cały czas ten sam przycisk. Użyjemy prostego warunku `if`, który pozwoli nam sprawdzić, jaki jest `display` zmiennej `textArea`. Kiedy będzie równy `none`, zmienimy go na `block` i odwrotnie. Jest tu jednak jeden mały haczyk - JS widzi tylko te style, które zostały przypisane do elementu przez skrypt. Przed pierwszym kliknięciem w przycisk, żaden styl jeszcze nie będzie przypisany. Dlatego będzie trzeba ustawić warunek, który ma zadziałać zarówno, jak `display` ustawiony jest na `none` oraz wtedy, kiedy nie jest jeszcze ustawiony. Kod będzie wyglądał tak:
 ```javascript
     buttons[0].addEventListener('click', function() {
 
@@ -83,7 +83,7 @@ Następnie analogicznie zmień zawartość HTML przycisku tak, by zawierała nap
     });
 ```
 09. Teraz wszystko powinno dobrze działać dla pierwszego przycisku. Chcemy jednak, by dla dwóch pozostałych przycisków też pokazywały się odpowiednie paragrafy. Możemy skopiować kod i podłączyć funkcję trzy razy do różnych przycisków, ale byłoby to bezsensowne powtarzanie kodu. Dlatego użyjemy pętli `for` do podłączenia funkcji do wszystkich przycisków jednocześnie. Dzięki odwołaniu się do `this` wewnątrz funkcji, zostanie wybrany odpowiedni paragraf dla danego przycisku.
-10. Najpierw przypiszmy całą funkcję, która była wywoływana przez `click` do funkcji, która nie będzie anonimowa. Wcześniej nasza funkcja nie miała nazwy, po prostu od razu wypisywaliśmy jej ciało. Oba sposoby przypisania funkcji są poprawne. Wygodniej nam będzie po prostu operować funkcją osobno, a podłączać ją dopiero w pętli. Żeby to zrozumieć, spójrz na poniższe przykłady. 
+10. Najpierw przypiszmy całą funkcję, która była wywoływana przez `click` do funkcji, która nie będzie anonimowa. Wcześniej nasza funkcja nie miała nazwy, po prostu od razu wpisywaliśmy jej ciało. Oba sposoby przypisania funkcji są poprawne. Wygodniej nam będzie po prostu operować funkcją osobno, a podłączać ją dopiero w pętli. Żeby to zrozumieć, spójrz na poniższe przykłady. 
 Ten kod:
 ```javascript
     function showHide() {
@@ -99,6 +99,7 @@ Robi dokładnie to samo, co ten kod:
 ```
 W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma zrobić program. W drugim przypadku od razu przekazujemy to, co ma zrobić program do funkcji anonimowej. 
 11. Przypisz kod dodany na kliknięcie do funkcji, która nazywa się np. `showHide`. 
+
 ```javascript
     function showHide() {
       var textArea = this.previousElementSibling;

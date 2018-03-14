@@ -47,7 +47,7 @@ Zwróć uwagę, że właśnie `event listener` dodaliśmy do całego naszego dok
 
 5. Zajrzyj do pliku CSS. Odnajdź w nim część odpowiedzialną za ostylowanie dodatkowego menu. Zwróć uwagę, na co ustawiony jest `display`.
 
-6. Naszym zadaniem jest zmiana wartości `display` dodatkowego menu z `none` na `block` po najechaniu myszką na element listy. To właśnie będzie ciało funkcji w naszym `listenerze`. Możesz przypisać odpowiednią wartość do własność CSS następująco:
+6. Naszym zadaniem jest zmiana wartości `display` dodatkowego menu z `none` na `block` po najechaniu myszką na element listy. To właśnie będzie ciało funkcji w naszym `listenerze`. Możesz przypisać odpowiednią wartość do własności CSS następująco:
 ```javascript
 element.style.display = 'block';
 ```

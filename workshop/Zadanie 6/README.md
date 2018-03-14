@@ -12,7 +12,7 @@ Naszym celem jest napisanie obsługi listy zadań znajdującej się w sekcji Pla
 
 # Instrukcja
 
-Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nich będzie dodawała zadanie do listy i posiadała inne funckjonalności (np. możliwość usuwania zadania). W naszym kodzie powinna znajdować się tylko finalna funkcja. Zapisujmy tylko to, czego używamy. Oczywiście w ramach ćwiczeń możesz zostawić wszystkie funkcje w kodzie, ale pamiętaj, by unikać tego w realnych projektach. 
+Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nich będzie dodawała zadanie do listy i posiadała inne funkcjonalności (np. możliwość usuwania zadania). W naszym kodzie powinna znajdować się tylko finalna funkcja. Zapisujmy tylko to, czego używamy. Oczywiście w ramach ćwiczeń możesz zostawić wszystkie funkcje w kodzie, ale pamiętaj, by unikać tego w realnych projektach. 
 
 ## Dodawanie zadania do listy
 
@@ -61,9 +61,9 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
 
 ## Walidacja treści inputu przed dodaniem zadania do listy
 
-1. Kolejna wariacja na temat naszej funkcji do walidacja treści inputu. Chcemy, by zadanie dodawało się do listy tylko, gdy input nie jest pusty. Inaczej przy każdym naciśnięciu `Dodaj` do listy zadań doda nam się pusty element. 
+1. Kolejna wariacja na temat naszej funkcji to walidacja treści inputu. Chcemy, by zadanie dodawało się do listy tylko, gdy input nie jest pusty. Inaczej przy każdym naciśnięciu `Dodaj` do listy zadań doda nam się pusty element. 
 2. Napisz kolejną funkcję i dodaj do `eventListenera`. Tym razem samodzielnie postaraj się zbudować mechanizm działania. Walidację dodaj przez wprowadzenie warunku `if`. Jeśli wartość inputu nie jest pusta, do listy powinno dodać się zadanie. Jeśli jest pusta, użytkownik musi zostać poinformowany, że nie można dodawać pustych zadań. 
-3. Żeby wyświetlić informacje o błędzie, zazwyczaj w kodzie HTML umieszcza się odpowiednią sekcję i ustawia się jej `display` na `none`. Gdy input będzie pusty, zmienia się `display` tej sekcji, dzięki czemu użytkownik może ją zobaczyć. Pamiętaj, by ukryć sekcję z powrotem, jeśli input będzie prawidłowy.
+3. Żeby wyświetlić informację o błędzie, zazwyczaj w kodzie HTML umieszcza się odpowiednią sekcję i ustawia się jej `display` na `none`. Gdy input będzie pusty, zmienia się `display` tej sekcji, dzięki czemu użytkownik może ją zobaczyć. Pamiętaj, by ukryć sekcję z powrotem, jeśli input będzie prawidłowy.
 4. Postaraj się wykonywać zadanie analogicznie do powyższych, tj. przypisuj zmienne, sprawdzaj je w konsoli, itp. Powodzenia!
 
 Jeśli chcesz zobaczyć rozwiązanie zadania, wpisz w konsoli następującą komendę (KONIECZNIE PAMIĘTAJ O COMMICIE NAJPIERW, INACZEJ STRACISZ SWOJE ZMIANY)
