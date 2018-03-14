@@ -1,4 +1,4 @@
-# Programuj, dziewczyno! - Warsztaty z podstaw front-endu 
+Warsztaty z podstaw front-endu 
 
 ## Jak pracować podczas warsztatu?
 
