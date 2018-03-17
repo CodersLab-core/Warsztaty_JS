@@ -1,0 +1,18 @@
+body {
+  background-color: lightblue;
+}
+
+.text1 {
+  color: green;
+}
+.text2 {
+  color: white;
+}
+
+#htmlLi {
+  color: pink;
+}
+
+img {
+  border: 5px dashed navy;
+}
