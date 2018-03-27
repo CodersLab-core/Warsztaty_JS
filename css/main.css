@@ -1,0 +1,44 @@
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_navigation {
+  display: flex;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.logo, ul {
+  border: 1px solid red;
+}
+
+.logo {
+  margin-right:10%; 
+  text-decoration: none;
+  color: #ea6c56;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.menu  li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li a {
+  
+  text-decoration: none;
+  color: #424343;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+
