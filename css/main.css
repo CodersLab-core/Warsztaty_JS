@@ -17,20 +17,20 @@ ul {
 }
 
 .logo, ul {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .logo {
   margin-right:10%; 
   text-decoration: none;
   color: #ea6c56;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
 .menu  li{
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .menu li a {
@@ -42,3 +42,17 @@ ul {
 }
 
 
+/* Sekcja z headerem */
+
+.jumbotron {
+  /* tło */
+  background-image: url('../images/main-background-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* tło potrzebuje wysokości */
+  height: 630px;
+  width:100%;
+  /* wyśrodkowanie elementów */
+  text-align: center;
+  padding-top:120px;
+}
