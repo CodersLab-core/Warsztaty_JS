@@ -34,16 +34,13 @@ ul {
 }
 
 .menu li a {
-  
   text-decoration: none;
   color: #424343;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-
 /* Sekcja z headerem */
-
 .jumbotron {
   /* tło */
   background-image: url('../images/main-background-img.jpg');
@@ -64,7 +61,6 @@ ul {
     font-weight: 600;
     font-size: 70px;
 }
-
 
 /* Stylowanie linkow */
 .jumbotron .main_button {
@@ -87,7 +83,6 @@ ul {
 }
 
 /* Sekcja z main points */
-
 /* Tworzymy strukturę artykułów */
 .main_points {
   display: flex;
@@ -102,7 +97,6 @@ ul {
 }
 
 /* Kształty w CSS */
-
 .main_points .circle {
   border-radius: 50%;
   width: 150px;
@@ -161,7 +155,6 @@ ul {
   background-size: cover;
   height: 640px;
   width:100%;
-
   padding:3% 8%;
 }
 
@@ -299,7 +292,6 @@ ul {
 }
 
 /* stopka */
-
 footer {
   margin-top: 30px;
   width: 100%;
