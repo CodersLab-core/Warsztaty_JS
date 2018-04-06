@@ -20,12 +20,16 @@ ul {
   /* border: 1px solid red; */
 }
 
+nav {
+  text-transform: uppercase;
+}
+
 .logo {
   margin-right:10%; 
   text-decoration: none;
   color: #ea6c56;
   font-size: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .menu  li{
@@ -37,9 +41,12 @@ ul {
   text-decoration: none;
   color: #424343;
   font-size: 18px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
+
+
+--------------------------------------------------------------------
 /* Sekcja z headerem */
 .jumbotron {
   /* tło */
