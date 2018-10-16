@@ -59,5 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
             menuBorder.style.borderBottom = '1px solid #7f7f7f';
       });
 
+//Zadanie 4
+
+      var buttonUp = document.querySelector('.button-up');
+      buttonUp.addEventListener('click', function() {
+            window.scroll(0,0);
+      });
 
     });
