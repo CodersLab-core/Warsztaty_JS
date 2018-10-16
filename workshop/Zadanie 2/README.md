@@ -123,7 +123,7 @@ W pierwszym przypadku tworzymy funkcję z osobną nazwą i tam określamy, co ma
     // Zaczynamy od pierwszego elementu tablicy, więc zmienną i ustawiamy na 0, bo to indeks pierwszego elementu
     // Kończymy naszą pętlę, gdy i jest równe długości tablicy, tj. przeszło przez wszystkie jej elementy
     // Nasza zmienna i ma podnosić się o 1 z każdą iteracją - oznaczamy to przez ++. Jest to równe wyrażeniu i + 1
-    for (var i = 0; i <= buttons.length; i++) {
+    for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', showHide);
     }
 ```
