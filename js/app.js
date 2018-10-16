@@ -71,9 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var items = document.querySelectorAll('.org');
       var dots = document.querySelectorAll('.dot');
 
-      console.log(items);
-      console.log(dots);
-
       dots[0].addEventListener('click', function() {
             for (var i = 0; i < dots.length; i++) {
                   dots[i].classList.remove('active');
