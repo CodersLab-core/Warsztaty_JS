@@ -308,3 +308,11 @@ footer p {
 .more {
   display: none;
 }
+
+.slider li {
+  display: none;
+}
+
+li.visible {
+  display: inline-block;
+}
