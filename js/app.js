@@ -51,4 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
             buttons[i].addEventListener('click', showHide);
       }
 
+//Zadanie 3
+
+      var menuBorder = document.querySelector('nav.navbar');
+      
+      window.addEventListener('scroll', function() {
+            menuBorder.style.borderBottom = '1px solid #7f7f7f';
+      });
+
+
     });
