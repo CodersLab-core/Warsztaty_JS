@@ -47,7 +47,7 @@ nav {
 }
 
 .dropdown {
-  display: block;
+  display: none;
   background-color: #fff;
   border-radius: 0 .0 .5rem .5rem;
   position: absolute;
@@ -132,7 +132,7 @@ nav {
 }
 
 .circle {
-	border-radius: 50%;
+  border-radius: 50%;
   padding: 4rem;
   font-size: 5rem;
   color: #fff;
