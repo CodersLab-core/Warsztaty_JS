@@ -131,8 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //-------------Dodawanie zadań z przyciskiem "Usuń"-------------
 
-      // addTaskBtn.addEventListener('click', addTaskWithDeleteButton);
-
       // function addTaskWithDeleteButton() {
 
       //             var newTask = document.createElement('li');
@@ -153,11 +151,10 @@ document.addEventListener('DOMContentLoaded', function () {
       //             });
       //       };
 
+      // addTaskBtn.addEventListener('click', addTaskWithDeleteButton);
 
 
 //-------------Dodawanie zadań z przyciskiem "Zrobione"-------------
-
-      // addTaskBtn.addEventListener('click', addTaskWithDoneButton);
 
       //       function addTaskWithDoneButton() {
 
@@ -183,11 +180,11 @@ document.addEventListener('DOMContentLoaded', function () {
       //             taskInput.value = '';
       //       };
 
+      // addTaskBtn.addEventListener('click', addTaskWithDoneButton);   
+
 
 
 //-------------Dodawanie zadań z walidacją inputa-------------
-
-      addTaskBtn.addEventListener('click', addTaskWithValidation);
 
       function addTaskWithValidation() {
 
@@ -207,5 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
       };
+
+      addTaskBtn.addEventListener('click', addTaskWithValidation);
 
 });
