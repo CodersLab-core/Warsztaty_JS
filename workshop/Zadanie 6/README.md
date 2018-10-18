@@ -26,7 +26,7 @@ Poniżej znajdziesz instrukcje jak napisać cztery różne funkcje. Każda z nic
         // tu zapiszemy mechanizm dodawania zadań
     };
 
-    button.addEventListener('click', addToList);
+    button.addEventListener('click', addTask);
 ```
 6. Po kliknięciu w przycisk do listy ma zostać dodane zadanie, którego treść jest równa zawartości wpisanej do inputu. Pierwszą rzeczą jaką musimy zrobić jest stworzenie nowego elementu listy. Zrobimy to używając `document.createElement('znacznik HTML')`. Przypiszmy ten element do odpowiedniej zmiennej, np:
 ```javascript
