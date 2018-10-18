@@ -4,8 +4,8 @@
 'use strict';
 
 //zapewniemy, żeby załadowała się najpierw cała zawartość kodu HTML, zanim zaczniemy wykonywać jakieś działania:
-document.addEventListener('DOMContentLoaded', function() {
-      
+document.addEventListener('DOMContentLoaded', function () {
+
       //sprawdzamy czy plik został prawidłowo podpięty:
       console.log('Sierotka ma rysia');
 
@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(dropdownTab.style);
 
       //po najechaniu myszką pojawi się menu rozwijane:
-      dropdownTab.addEventListener('mouseover', function() {
-      	dropdownListElements.style.display = 'block';
+      dropdownTab.addEventListener('mouseover', function () {
+            dropdownListElements.style.display = 'block';
       });
 
       //gdy kursor znajduje się poza menu - lista rozwijana znika:
-      dropdownTab.addEventListener('mouseout', function() {
-      	dropdownListElements.style.display = 'none';
+      dropdownTab.addEventListener('mouseout', function () {
+            dropdownListElements.style.display = 'none';
       });
 
 //Zadanie 2
@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
       function showHide() {
 
-      var textArea = this.previousElementSibling;
-   
-      if (textArea.style.display === 'none' || textArea.style.display === '') {
-            textArea.style.display = 'block';
-            this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
-      } else {
-            textArea.style.display = 'none';
-            this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
+            var textArea = this.previousElementSibling;
+
+            if (textArea.style.display === 'none' || textArea.style.display === '') {
+                  textArea.style.display = 'block';
+                  this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
+            } else {
+                  textArea.style.display = 'none';
+                  this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
             }
       }
 
@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', function() {
 //Zadanie 3
 
       var menuBorder = document.querySelector('nav.navbar');
-      
-      window.addEventListener('scroll', function() {
+
+      window.addEventListener('scroll', function () {
             menuBorder.style.borderBottom = '1px solid #7f7f7f';
       });
 
 //Zadanie 4
 
       var buttonUp = document.querySelector('.button-up');
-      buttonUp.addEventListener('click', function() {
-            window.scroll(0,0);
+      buttonUp.addEventListener('click', function () {
+            window.scroll(0, 0);
       });
 
 //Zadanie 5
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var items = document.querySelectorAll('.org');
       var dots = document.querySelectorAll('.dot');
 
-      dots[0].addEventListener('click', function() {
+      dots[0].addEventListener('click', function () {
             for (var i = 0; i < dots.length; i++) {
                   dots[i].classList.remove('active');
                   items[i].classList.remove('visible');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             items[0].classList.add('visible');
       });
 
-      dots[1].addEventListener('click', function() {
+      dots[1].addEventListener('click', function () {
             for (var i = 0; i < dots.length; i++) {
                   dots[i].classList.remove('active');
                   items[i].classList.remove('visible');
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
             items[1].classList.add('visible');
       });
 
-      dots[2].addEventListener('click', function() {
+      dots[2].addEventListener('click', function () {
             for (var i = 0; i < dots.length; i++) {
                   dots[i].classList.remove('active');
                   items[i].classList.remove('visible');
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             items[2].classList.add('visible');
       });
 
-      dots[3].addEventListener('click', function() {
+      dots[3].addEventListener('click', function () {
             for (var i = 0; i < dots.length; i++) {
                   dots[i].classList.remove('active');
                   items[i].classList.remove('visible');
@@ -107,4 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
             items[3].classList.add('visible');
       });
 
-    });
+});
