@@ -316,3 +316,41 @@ footer p {
 li.visible {
   display: inline-block;
 }
+
+
+
+.delete-btn {
+  font-weight: 400;
+  color: #ea6c56;
+  text-transform: uppercase;
+  background-color: #ececec;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+  color: #fff;
+  background-color: #a5a5a5;
+}
+
+.ok-btn {
+  font-weight: 400;
+  color: #ea6c56;
+  text-transform: uppercase;
+  background-color: #ececec;
+}
+
+.ok-btn:hover,
+.ok-btn:active {
+  color: #fff;
+  background-color: #a5a5a5;
+}
+
+div.warning {
+  display: none;
+}
+
+ul.list-group li {
+  display: flex;
+  justify-content: space-between;
+}
+
