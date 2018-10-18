@@ -4,8 +4,8 @@
 'use strict';
 
 //zapewniemy, żeby załadowała się najpierw cała zawartość kodu HTML, zanim zaczniemy wykonywać jakieś działania:
-document.addEventListener('DOMContentLoaded', function() {
-      
+document.addEventListener('DOMContentLoaded', function () {
+
       //sprawdzamy czy plik został prawidłowo podpięty:
       console.log('Sierotka ma rysia');
 
@@ -21,15 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(dropdownTab.style);
 
       //po najechaniu myszką pojawi się menu rozwijane:
-      dropdownTab.addEventListener('mouseover', function() {
-      	dropdownListElements.style.display = 'block';
+      dropdownTab.addEventListener('mouseover', function () {
+            dropdownListElements.style.display = 'block';
       });
 
       //gdy kursor znajduje się poza menu - lista rozwijana znika:
-      dropdownTab.addEventListener('mouseout', function() {
-      	dropdownListElements.style.display = 'none';
+      dropdownTab.addEventListener('mouseout', function () {
+            dropdownListElements.style.display = 'none';
       });
 
-
-
-    });
+});
